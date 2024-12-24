@@ -1,0 +1,87 @@
+body{
+    border: solid whitesmoke 5px;
+    background-color: rgb(105, 74, 134);
+    color: aliceblue;
+    text-align: justify;
+}
+
+#div1 {
+    border: dashed blue 2px;
+    width: auto;
+    background: linear-gradient(to left, darksalmon, violet);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 45px;
+    /* margin: auto; */
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+#div2{
+    border: double bisque 8px;
+    width: auto;
+    background-image: url("https://picsum.photos/200/300");
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 500px;
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: end;
+}
+
+#div3{
+    border: dotted red 5px;
+    width: auto;
+    background:linear-gradient(to right, pink,Skyblue);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 55px;
+    /* margin: auto; */
+    padding-left: 55px;
+    padding-right: 50px;
+    text-align: start;
+    
+}
+
+#div4{
+    border: ridge bisque 3px;
+    width: auto;
+    background-color: darkseagreen;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+#div5{
+    background-color: cornflowerblue;
+    /* background: linear-gradient(to bottom right, HotPink,MediumPurple); */
+    text-align: center;
+    margin-bottom: 5px;
+    height: 150px;
+
+}
+table,td{
+    border: solid 2px beige;
+    border-collapse: collapse;
+    background-color: azure;
+    color: black;
+    margin: auto;
+}
+
+th{
+    background-color: #333;
+    color: #ffff;
+}
+
+/* td{
+    border: solid 2px green;
+} */
+

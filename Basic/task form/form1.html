@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="form.js"></script>
+<body>
+
+    <div class="formDiv">
+        <form name="formName" onsubmit="return validationForm()">
+            <h1 style="text-align: center;">Form</h1>
+            
+                <div>
+                    <label for="nameId">Enter full name <span class="redColor">*</span>:</label>
+                    <input type="text" name="nameName" id="nameId" placeholder="Enter your full name" required> <br>
+                    <span class="redColor" id="nameErr"></span>
+                </div>
+                <div>
+                    <label for="emailId">Enter email <span class="redColor">*</span>:</label>
+                    <input type="email" name="emailName" id="emailId" placeholder="example@gmail.com" required><br>
+                </div>
+                <div>
+                    <label for="numberId">Enter number <span class="redColor">*</span>:</label>
+                    <input type="number" name="numberName" id="numberId" placeholder="Enter 10 digit phone number" required><br>
+                    <span class="redColor" id="numberIdErr"></span>
+                </div>
+                <div>
+                    <label for="passId">Enter password <span class="redColor">*</span>:</label>
+                    <input type="password" name="passName" id="passId" placeholder="Enter password" required>
+                </div>
+                <div>
+                    <label for="passId2">Confirm password <span class="redColor">*</span>:</label>
+                    <input type="password" name="passName2" id="passId2" placeholder="Confirm password" required><br>
+                    <span class="redColor" id="spanPass2IdErr"></span>
+                </div>
+                <div class="gender-selection">
+                    <span style="font-size: 14px;">Select Gender:</span>
+                    <label for="maleId">Male</label>
+                    <input type="radio" name="gender" id="maleId" required>
+                    <label for="femaleId">Female</label>
+                    <input type="radio" name="gender" id="femaleId"><br>
+                    <span class="redColor" id="genderErr"></span>
+                </div>
+                <div>
+                    <label for="dobID">DOB <span class="redColor">*</span>:</label>
+                    <input type="date" name="dobName" id="dobID" required><br>
+                    <span class="redColor" id="dobErr"></span>
+                </div>
+                <div>
+                    <label for="countryId" >Select country <span class="redColor">*</span>:</label>
+                    <select id="country" name="countryName" required>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="sri-lanka">Sri Lanka</option>
+                        <option value="thailand">Thailand</option>
+                    </select><br>
+                    <span class="redColor" id="selectErr"></span>
+                </div>
+                <div class="hobbies-selection">
+                    <label for="hobbiesId">Select your hobbies:</label>
+                    <input type="checkbox" id="readingId" name="hobbiesName" value="reading">
+                    <label for="readingId">Reading</label>
+                    <input type="checkbox" id="sportsId" name="hobbiesName" value="sports">
+                    <label for="sportsId">Sports</label>
+                    <input type="checkbox" id="musicId" name="hobbiesName" value="music">
+                    <label for="musicId">Music</label>
+                    <input type="checkbox" id="travelingId" name="hobbiesName" value="traveling">
+                    <label for="travelingId">Traveling</label>
+                </div>
+                <div>
+                    <label for="timeID">Select form submitting time:</label>
+                    <input type="time" id="timeID" name="timeName">
+                </div>
+            
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

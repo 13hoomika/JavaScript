@@ -1,0 +1,54 @@
+.className{
+    background-color: palegoldenrod;
+}
+#special{
+    color: aqua;
+    background-color: darkgreen;
+}
+#firstOne{
+    color: aqua;
+    background-color: brown;
+    text-align: center;
+}
+
+body{
+    /* background-image: url("pexels-pixabay-162140.jpg"); */
+    /* background-image: url("https://picsum.photos/id/237/536/354"); */
+    background-repeat:no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    
+}
+
+#secondDiv{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border:solid 2px black;
+    border-radius: 15px;
+    border-width: 10px;
+    color: rgb(38, 98, 49);
+    border-style:solid ;
+    background-color: rgba(0, 0, 0, 0.151);
+    
+}
+
+#gradientLeft{
+    background: linear-gradient(to left,skyblue,lightgreen);
+}
+.rightPara{
+    background: linear-gradient(to right,pink,lightgreen);
+}
+.topPara{
+    background: linear-gradient(to top,skyblue,white);
+}
+.bottomPara{
+    background: linear-gradient(to bottom,yellow,rgb(206, 206, 236));
+}
+
+#box1{
+    color: deeppink;
+    border: dotted darkviolet 6px;
+    width: 500px;
+    height: 150px;
+    
+}

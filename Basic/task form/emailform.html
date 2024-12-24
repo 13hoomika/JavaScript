@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <script src="emailform.js"></script>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formDiv {
+    /* background-color: #ffffff; */
+    background: linear-gradient(to left, rgb(64, 64, 163),purple);
+    padding: 0 2% 2% 2%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+    width: 100%;
+}
+
+
+label {
+    margin-top: 2%;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color:white;
+    
+}
+.redColor {
+    color: #ff4d4d;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    
+    background: linear-gradient(30deg, blue,blueviolet );
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+    </style>
+<body>
+
+    <div class="formDiv">
+        <form name="Myform" onsubmit="return emailValidation()">
+              <!-- email type text -->
+                <div>
+                    <label for="emailId" >Enter email <span class="redColor">*</span>:</label>
+                    <input type="text" name="emailName" id="emailId" placeholder="example@gmail.com" required><br>
+                </div>
+         
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="submit" value="Clear" onclick="clearForm()">
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+
+</html>

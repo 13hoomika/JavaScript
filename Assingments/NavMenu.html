@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NavBar</title>
+    <style>
+        .navBar {
+            background-color: black;
+            border-radius: 4px;
+            font-size: large;
+        }
+
+        .navBar ul {
+            overflow: auto;
+        }
+        .navBar ul a{
+            float: inline-start;
+            /* margin-top: 20px; */
+            padding: 10px;
+        }
+
+        .navBar li {
+            float: left;
+            list-style: none;
+            display: inline;
+            margin: 13px 20px;
+        }
+
+        .navBar li a {
+            text-decoration: none;
+            padding: 3px 3px;
+            color: aliceblue;
+        }
+
+        .navBar li a:hover {
+            padding: 6px;
+            background-color: orangered;
+            color:white;
+            border: orangered;
+            border-radius: 15px;
+        }
+
+        .search {
+            float: right;
+            color: White;
+            padding: 12px 30px;
+        }
+
+        .navBar input {
+            border: 2px solid beige;
+            border-radius: 5px;
+            padding: 6px 17px;
+        }
+
+        .navBar logodiv{
+            float: right;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="navbarDiv">
+        <nav class="navBar">
+            <ul>
+                <a href="index.html"><img src="https://www.x-workz.in/Logo.png" alt="logo" height="35" width="80"></a>
+                <!-- <li><a href="index.html"><img src="https://www.x-workz.in/Logo.png" alt="logo" height="30" width="70"></a></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Reviwes</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="search here...">
+                </div>
+            </ul>
+
+        </nav>
+    </div>
+</body>
+
+</html>

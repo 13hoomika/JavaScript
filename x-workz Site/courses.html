@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xworkz</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navContainer {
+            background-color: rgb(11, 11, 11);
+            float: left;
+            width: 100%;
+            height: 70px;
+        }
+
+        #nav1 {
+            width: 20%;
+        }
+
+        #nav2 {
+            color: white;
+            float: left;
+            width: 60%;
+            margin-left: 140px;
+            margin-top: -100px;
+        }
+
+        #nav2 li {
+            list-style: none;
+            float: left;
+            margin: 40px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            font-weight: 700;
+        }
+
+        #nav2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav2 li a:hover {
+            color: crimson;
+        }
+
+        #nav3 {
+            color: white;
+            float: left;
+            width: 20%;
+            margin-left: 70px;
+            margin-top: -78px;
+        }
+
+        #nav3 li {
+            list-style: none;
+            float: left;
+            margin: 10px 10px;
+        }
+
+        #nav3 ul a:hover {
+            padding: 6px 8px 6px 8px;
+            background-color: orangered;
+            color: white;
+            border: orangered;
+            border-radius: 20px;
+        }
+
+
+        #foot li {
+            list-style: none;
+            float: left;
+            width: 50px;
+            border-radius: 50%;
+            margin-top: -50px;
+        }
+
+        footer {
+            height: 63vh;
+        }
+
+        .footMain img {
+            margin-left: 260px;
+            margin-top: 60px;
+        }
+
+        .footMain h2 {
+            margin-left: 290px;
+            /* margin-top:  60px; */
+        }
+
+        .availableCourses {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: rgb(88, 86, 86);
+            font-weight: lighter;
+            padding-top: 5%;
+        }
+
+        .footList ul {
+            margin-left: 650px;
+            margin-top: -40px;
+        }
+
+        .footList li {
+            list-style: none;
+            float: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+            /* margin-left: 90px; */
+            /* margin-top: -40px; */
+        }
+
+        .footList a {
+            text-decoration: none;
+            color: rgb(86, 85, 85);
+            margin-left: 20px;
+        }
+
+        .footList a:hover {
+            color: rgb(239, 53, 53);
+        }
+        
+
+        .container1 {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 36%;
+            margin-right: 640px;
+            background-color: white;
+            border: 1px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 25%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .containCourse {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7);
+            color: white;
+            padding: 10px;
+            /* border-radius: 2px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: medium;
+        }
+
+        .containDetail {
+            padding: 10px;
+            text-align: left;
+            font-size: medium;
+
+        }
+
+        .container12 {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: white;
+            border: 1px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .containCourse1 {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7);
+            color: white;
+            padding: 10px;
+            /* border-radius: 2px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: medium;
+        }
+
+        .containDetail1 {
+            padding: 10px;
+            text-align: left;
+            font-size: medium;
+
+        }
+
+        .container12- {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: white;
+            border: 1px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .containCourse1- {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7);
+            color: white;
+            padding: 10px;
+            /* border-radius: 2px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: medium;
+        }
+
+        .containDetail1- {
+            padding: 10px;
+            text-align: left;
+            font-size: medium;
+
+        }
+
+        .container121 {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color:white;
+            border: 1px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+
+        .containCourse11 {
+            background: linear-gradient(to top right, #1325e8 -5%, #8f10b7);
+            color: white;
+            padding: 10px;
+            /* border-radius: 2px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-size: medium;
+        }
+
+        .containDetail11 {
+            padding: 10px;
+            text-align: left;
+            font-size: medium;
+        }
+
+        .availableCourses1 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            color: rgb(88, 86, 86);
+            font-weight: lighter;
+            padding-top: 8px;
+            /* margin-left: 300px; */
+            margin-bottom: 20px;
+            /* float: left; */
+        }
+        
+
+        .flexi {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* .upcoming{
+            text-align: center;
+            padding-top: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navContainer">
+            <div id="nav1">
+                <a href="home.html"><img src="https://www.x-workz.in/Logo.png" alt="logo" height="70px"
+                        width="140px"></a>
+            </div>
+            <div id="nav2">
+                <ul>
+                    <li
+                        style="border: 2px solid none; border-radius: 30px; padding: 7px; margin-top: 32px; background-color: rgb(233, 81, 21);">
+                        <a href="Register.html"> REGISTER</a>
+                    </li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="softwares.html">SOFTWARE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="directions.html">DIRECTIONS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="interviewQ.html">INTERVIEW QUESTION</a></li>
+                </ul>
+            </div>
+            <div id="nav3">
+                <ul>
+                    <li id="fblogo"><a href="https://www.facebook.com/xworkzdevelopmentcenter/" target="_blank"><img
+                                src="img/facebook-app-symbol.png" alt="fblogo"></a></li>
+                    <li id="twtlogo"><a href="https://x.com/workz_x" target="_blank"><img src="img/twitter.png"
+                                alt="twtlogo"></a></li>
+                    <li id="instalogo"><a href="https://www.instagram.com/xworkzraj/" target="_blank"><img
+                                src="img/instagram.png" alt="instalogo"></a></li>
+                    <li id="lilogo"><a href="https://www.linkedin.com/in/x-workz-odc/?originalSubdomain=in"
+                            target="_blank"><img src="img/linkedin.png" alt="lilogo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="availableCourses">
+            <h2 id="upcoming">Upcoming Courses</h2>
+            <div class="container1">
+                <div class="containCourse">
+                    <p>COURSE</p>
+                    <h2>Core Java</h2>
+                </div>
+                <div class="containDetail">
+                    <p>TRAINER</p>
+                    <h2>Omkar</h2>
+                    <h4>WeekDay offline Upcomming</h4>
+                    <p>STARTS FROM</p>
+                    <p>17-JUNE-2024</p>
+                    <p>LOCATION: Rajaji nagar</p>
+                    <p>TIMING: 8:00AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="availableCourses1">
+            <h2>Ongoing Courses</h2>
+            <div class="flexi">
+                <div class="container12">
+                    <div class="containCourse1">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail1">
+                        <p>TRAINER</p>
+                        <h2>Devendra</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>10-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 2:30PM</p>
+                    </div>
+                </div>
+                <div class="container12-">
+                    <div class="containCourse1-">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail1-">
+                        <p>TRAINER</p>
+                        <h2>Vinod</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>10-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 9:30AM</p>
+                    </div>
+                </div>
+                <div class="container121">
+                    <div class="containCourse11">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail11">
+                        <p>TRAINER</p>
+                        <h2>Devendra</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>03-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 11:30AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="availableCourses1">
+            <h2>Completed Courses</h2>
+            <div class="flexi">
+                <div class="container12">
+                    <div class="containCourse1">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail1">
+                        <p>TRAINER</p>
+                        <h2>Devendra</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>10-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 2:30PM</p>
+                    </div>
+                </div>
+                <div class="container12-">
+                    <div class="containCourse1-">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail1-">
+                        <p>TRAINER</p>
+                        <h2>Vinod</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>10-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 9:30AM</p>
+                    </div>
+                </div>
+                <div class="container121">
+                    <div class="containCourse11">
+                        <p>COURSE</p>
+                        <h2>Core Java</h2>
+                    </div>
+                    <div class="containDetail11">
+                        <p>TRAINER</p>
+                        <h2>Devendra</h2>
+                        <h4>WeekDay offline Upcomming</h4>
+                        <p>STARTS FROM</p>
+                        <p>03-JUNE-2024</p>
+                        <p>LOCATION: Rajaji nagar</p>
+                        <p>TIMING: 11:30AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="availableCourses1">
+        <!-- <h2 style="margin-left: -280px;">Completed Courses</h2> -->
+        <div class="flexi">
+            <div class="container12">
+                <div class="containCourse1">
+                    <p>COURSE</p>
+                    <h2>Core Java</h2>
+                </div>
+                <div class="containDetail1">
+                    <p>TRAINER</p>
+                    <h2>Devendra</h2>
+                    <h4>WeekDay offline Upcomming</h4>
+                    <p>STARTS FROM</p>
+                    <p>10-JUNE-2024</p>
+                    <p>LOCATION: Rajaji nagar</p>
+                    <p>TIMING: 2:30PM</p>
+                </div>
+            </div>
+            <div class="container12-">
+                <div class="containCourse1-">
+                    <p>COURSE</p>
+                    <h2>Core Java</h2>
+                </div>
+                <div class="containDetail1-">
+                    <p>TRAINER</p>
+                    <h2>Vinod</h2>
+                    <h4>WeekDay offline Upcomming</h4>
+                    <p>STARTS FROM</p>
+                    <p>10-JUNE-2024</p>
+                    <p>LOCATION: Rajaji nagar</p>
+                    <p>TIMING: 9:30AM</p>
+                </div>
+            </div>
+            <div class="container121">
+                <div class="containCourse11">
+                    <p>COURSE</p>
+                    <h2>Core Java</h2>
+                </div>
+                <div class="containDetail11">
+                    <p>TRAINER</p>
+                    <h2>Devendra</h2>
+                    <h4>WeekDay offline Upcomming</h4>
+                    <p>STARTS FROM</p>
+                    <p>03-JUNE-2024</p>
+                    <p>LOCATION: Rajaji nagar</p>
+                    <p>TIMING: 11:30AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer style="background-color: black;">
+        <div class="footMain">
+            <img src="https://www.x-workz.in/Logo.png" alt="logo" width="220px" height="120px">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Follow us</h2>
+            <div id="foot">
+                <ul>
+                    <li id="fblogo"><a href="https://www.facebook.com/xworkzdevelopmentcenter/" target="_blank"><img
+                                src="img/facebook-app-symbol.png" alt="fblogo"></a></li>
+                    <li id="twtlogo"><a href="https://x.com/workz_x" target="_blank"><img src="img/twitter.png"
+                                alt="twtlogo"></a></li>
+                    <li id="instalogo"><a href="https://www.instagram.com/xworkzraj/" target="_blank"><img
+                                src="img/instagram.png" alt="instalogo"></a></li>
+                    <li id="lilogo"><a href="https://www.linkedin.com/in/x-workz-odc/?originalSubdomain=in"
+                            target="_blank"><img src="img/linkedin.png" alt="lilogo"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2 style="color: white;margin-top: -160px; margin-left: 1150px;"> Subscribe</h2>
+            <h3 style="color: rgb(114, 113, 113); margin-top: -10px; margin-left: 1150px;">Don’t miss to subscribe to
+                our new feeds, kindly fill the form below.</h3>
+            <input type="text" placeholder="Email Address"
+                style="margin-left: 156vh; padding:10px; background-color: rgb(48, 48, 48); color: rgb(127, 124, 124);">
+        </div>
+        <div class="footList">
+            <h4 style="text-align: center; color: rgb(77, 76, 76); margin-top: 25vh; margin-right: 80vh;">Copyright ©
+                2022, All Right Reserved</h4>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="softwares.html">SOFTWARE</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="directions.html">DIRECTIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
